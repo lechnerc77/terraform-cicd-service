@@ -1,0 +1,11 @@
+{
+  "name": "terraform-cicd-service",
+  "version": "0.0.1",
+  "description": "Pseudo node project",
+  "main": "index.js",
+  "scripts": {
+    "tfplan": "./scripts/tfplan.sh"
+  },
+  "author": "",
+  "license": "Apache-2.0"
+}
