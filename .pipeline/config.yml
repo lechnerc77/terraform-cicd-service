@@ -2,6 +2,6 @@ service:
   stages:
     Build:
       runFirst:
-        command: "chmod a+x scripts/tfplan.sh && ls -la scripts && chmod a+x tools/terraform && ls -la tools && npm run tfplan"
+        command: "npm run tfplan"
 #      runLast:
 #        command: "tfcli/terraform -version"
