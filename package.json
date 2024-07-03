@@ -4,7 +4,7 @@
   "description": "Pseudo node project",
   "main": "index.js",
   "scripts": {
-    "tfplan": "./scripts/tfplan.sh"
+    "tfplan": "scripts/tfplan.sh"
   },
   "author": "",
   "license": "Apache-2.0"
