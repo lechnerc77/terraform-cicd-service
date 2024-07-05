@@ -6,6 +6,10 @@ echo "+++++++++++++++++++++++++++"
 export BTP_USERNAME=$btpauthentication_user
 export BTP_PASSWORD=$btpauthentication_password
 
+echo $btpauthentication_user
+echo $btpauthentication_password
+echo $globalaccountsubdomain
+
 ./tools/terraform --help
 
 ./tools/terraform -chdir="setup_subaccount" init
