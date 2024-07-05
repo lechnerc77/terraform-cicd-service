@@ -1,6 +1,10 @@
 #!/bin/bash
-echo "++++++++++++++++++++++++++"
-echo "+ Creating Terraform plan"
-echo "++++++++++++++++++++++++++"
+echo "+++++++++++++++++++++++++++"
+echo "+ Executing Terraform plan"
+echo "+++++++++++++++++++++++++++"
 
-./tools/terraform -version
+export BTP_USERNAME=$btp-authentication_user
+export BTP_PASSWORD=$btp-authentication_password
+
+./tools/terraform -chdir="setup_subaccount" init
+./tools/terraform -chdir="setup_subaccount" plan -var globalaccount=$globalaccount-subdomain
