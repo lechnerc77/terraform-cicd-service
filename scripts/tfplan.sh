@@ -10,7 +10,5 @@ echo $btpauthentication_user
 echo $btpauthentication_password
 echo $globalaccountsubdomain
 
-./tools/terraform --help
-
 ./tools/terraform -chdir="setup_subaccount" init
 ./tools/terraform -chdir="setup_subaccount" plan -var globalaccount=$globalaccountsubdomain

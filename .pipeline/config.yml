@@ -1,5 +1,10 @@
 service:
   stages:
     Build:
+      credentialVariables:
+        - name: "btpauthentication"
+          credentialId: "btpauthentication"
+        - name: "globalaccountsubdomain"
+          credentialId: "globalaccountsubdomain"  
       runFirst:
         command: "chmod a+x scripts/tfplan.sh && chmod a+x tools/terraform && npm run tfplan"
